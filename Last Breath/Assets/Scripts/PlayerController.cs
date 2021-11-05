@@ -1,11 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+<<<<<<< HEAD
 using UnityEngine.SceneManagement;
+=======
+>>>>>>> 0470485868f7ec581c37f80dc8ce20cf4daba289
 
 public class PlayerController : MonoBehaviour
 {
 
+<<<<<<< HEAD
     bool alive = true;
 
     public Rigidbody rb;
@@ -55,4 +59,26 @@ public class PlayerController : MonoBehaviour
 
         //die audio
     }
+=======
+    public float speed = 5;
+    public Rigidbody rb;
+
+    private void FixedUpdate()
+    {
+        Vector3 forwardMove = transform.forward * speed * Time.fixedDeltaTime;
+        rb.MovePosition(rb.position + forwardMove);
+    }
+
+    // Start is called before the first frame update
+    //void Start()
+    //{
+        
+    //}
+
+    // Update is called once per frame
+    //void Update()
+    //{
+        
+    //}
+>>>>>>> 0470485868f7ec581c37f80dc8ce20cf4daba289
 }
